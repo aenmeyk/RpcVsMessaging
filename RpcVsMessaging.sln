@@ -1,0 +1,90 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.30501.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{E1E8BF31-3781-43EA-A029-9DFF3F6C9E1A}"
+	ProjectSection(SolutionItems) = preProject
+		Local.testsettings = Local.testsettings
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Enterprise.Purchasing.WebApi", "Enterprise.Purchasing.WebApi\Enterprise.Purchasing.WebApi.csproj", "{348C680A-8F51-4150-98CB-D4469FCC8537}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Enterprise.Purchasing.Persistence", "Enterprise.Purchasing.Persistence\Enterprise.Purchasing.Persistence.csproj", "{1E6CBC1D-42A2-469B-B1CF-E00AD4AC7BDD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Enterprise.Inventory", "Enterprise.Inventory\Enterprise.Inventory.csproj", "{9C81686A-C333-4D68-95CE-7389E1141B35}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Enterprise.Purchasing.QueueHandler", "Enterprise.Purchasing.QueueHandler\Enterprise.Purchasing.QueueHandler.csproj", "{95884068-66E6-4490-A468-BCEC983FFAB3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Enterprise.Inventory.Test", "Enterprise.Inventory.Test\Enterprise.Inventory.Test.csproj", "{1E6EABF8-3AAF-4748-B220-BC73AB09C341}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Enterprise.Inventory.LoadTest", "Enterprise.Inventory.LoadTest\Enterprise.Inventory.LoadTest.csproj", "{CACE0821-B36D-4F89-96FD-3D38CD687C20}"
+EndProject
+Project("{F088123C-0E9E-452A-89E6-6BA2F21D5CAC}") = "Enterprise.Modeling", "Enterprise.Modeling\Enterprise.Modeling.modelproj", "{C0BC3D0C-79AD-4384-A345-F2726958CA08}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 8
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://kevinaenmey.visualstudio.com/defaultcollection
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = Enterprise.Purchasing.WebApi\\Enterprise.Purchasing.WebApi.csproj
+		SccProjectName1 = Enterprise.Purchasing.WebApi
+		SccLocalPath1 = Enterprise.Purchasing.WebApi
+		SccProjectUniqueName2 = Enterprise.Purchasing.Persistence\\Enterprise.Purchasing.Persistence.csproj
+		SccProjectName2 = Enterprise.Purchasing.Persistence
+		SccLocalPath2 = Enterprise.Purchasing.Persistence
+		SccProjectUniqueName3 = Enterprise.Inventory\\Enterprise.Inventory.csproj
+		SccProjectName3 = Enterprise.Inventory
+		SccLocalPath3 = Enterprise.Inventory
+		SccProjectUniqueName4 = Enterprise.Purchasing.QueueHandler\\Enterprise.Purchasing.QueueHandler.csproj
+		SccProjectName4 = Enterprise.Purchasing.QueueHandler
+		SccLocalPath4 = Enterprise.Purchasing.QueueHandler
+		SccProjectUniqueName5 = Enterprise.Inventory.Test\\Enterprise.Inventory.Test.csproj
+		SccProjectName5 = Enterprise.Inventory.Test
+		SccLocalPath5 = Enterprise.Inventory.Test
+		SccProjectUniqueName6 = Enterprise.Inventory.LoadTest\\Enterprise.Inventory.LoadTest.csproj
+		SccProjectName6 = Enterprise.Inventory.LoadTest
+		SccLocalPath6 = Enterprise.Inventory.LoadTest
+		SccProjectUniqueName7 = Enterprise.Modeling\\Enterprise.Modeling.modelproj
+		SccProjectName7 = Enterprise.Modeling
+		SccLocalPath7 = Enterprise.Modeling
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{348C680A-8F51-4150-98CB-D4469FCC8537}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{348C680A-8F51-4150-98CB-D4469FCC8537}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{348C680A-8F51-4150-98CB-D4469FCC8537}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{348C680A-8F51-4150-98CB-D4469FCC8537}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1E6CBC1D-42A2-469B-B1CF-E00AD4AC7BDD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1E6CBC1D-42A2-469B-B1CF-E00AD4AC7BDD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1E6CBC1D-42A2-469B-B1CF-E00AD4AC7BDD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1E6CBC1D-42A2-469B-B1CF-E00AD4AC7BDD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9C81686A-C333-4D68-95CE-7389E1141B35}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9C81686A-C333-4D68-95CE-7389E1141B35}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9C81686A-C333-4D68-95CE-7389E1141B35}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9C81686A-C333-4D68-95CE-7389E1141B35}.Release|Any CPU.Build.0 = Release|Any CPU
+		{95884068-66E6-4490-A468-BCEC983FFAB3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{95884068-66E6-4490-A468-BCEC983FFAB3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{95884068-66E6-4490-A468-BCEC983FFAB3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{95884068-66E6-4490-A468-BCEC983FFAB3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1E6EABF8-3AAF-4748-B220-BC73AB09C341}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1E6EABF8-3AAF-4748-B220-BC73AB09C341}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1E6EABF8-3AAF-4748-B220-BC73AB09C341}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1E6EABF8-3AAF-4748-B220-BC73AB09C341}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CACE0821-B36D-4F89-96FD-3D38CD687C20}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CACE0821-B36D-4F89-96FD-3D38CD687C20}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CACE0821-B36D-4F89-96FD-3D38CD687C20}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CACE0821-B36D-4F89-96FD-3D38CD687C20}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C0BC3D0C-79AD-4384-A345-F2726958CA08}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C0BC3D0C-79AD-4384-A345-F2726958CA08}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C0BC3D0C-79AD-4384-A345-F2726958CA08}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C0BC3D0C-79AD-4384-A345-F2726958CA08}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

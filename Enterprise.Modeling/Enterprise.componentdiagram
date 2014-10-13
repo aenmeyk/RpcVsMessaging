@@ -1,0 +1,183 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<componentModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" dslVersion="1.0.0.0" Id="ba83c971-087b-4c98-af7c-57afe8a2d5ba" name="Enterprise" linkedPackageId="4092ce23-7f82-4f06-a70c-5193fbb40452" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ComponentDesigner">
+  <packagedElements>
+    <componentModelHasComponents>
+      <component Id="f5f4cd46-8220-4804-9d73-9c4008305e0e" name="Purchasing Application" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="883b8f83-234c-420e-9239-e181e51243b3" />
+        <ownedAttributesInternal>
+          <part Id="f375523e-34a2-4ece-8167-478550aba43d" name="Enterprise.Purchasing.WebApi" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Composite" isComposite="true">
+            <elementDefinition Id="4a752859-8563-41fc-b4b1-2bb29330b889" />
+            <type_NamedElement>
+              <componentMoniker Id="993cba17-d616-4c75-b452-e1ff9b726592" />
+            </type_NamedElement>
+          </part>
+          <part Id="89f70440-8fb2-48ef-91d5-a16d23c671f6" name="Enterprise.Purchasing.Persistence" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Composite" isComposite="true">
+            <elementDefinition Id="582b93a0-7ac5-4685-9328-0e56f7bfdcce" />
+            <type_NamedElement>
+              <componentMoniker Id="ff1f5211-ff2e-41c2-abd2-2ff25e953229" />
+            </type_NamedElement>
+          </part>
+          <providedInterface Id="d70488cb-2478-47af-91b7-f4b99e46c662" name="Port1" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isService="false" isBehavior="false">
+            <elementDefinition Id="eb28e676-7ec2-42a5-bb7c-1a3cfbb167de" />
+            <targetNamedElementsInternal>
+              <connector Id="e1d33d64-ec38-4eec-b6cf-65215d54a606" isLeaf="false" isStatic="false">
+                <partMoniker Id="f375523e-34a2-4ece-8167-478550aba43d" LastKnownName="Enterprise.Purchasing.WebApi" />
+                <relationshipOwnedElementsInternal>
+                  <connectorHasConnectorEnds>
+                    <connectorEnd Id="268b5b3b-b3cd-41fc-9dfc-07fde8a98cd5">
+                      <elementDefinition Id="478e835a-0006-4625-891b-0e307f70c0a3" />
+                    </connectorEnd>
+                  </connectorHasConnectorEnds>
+                  <connectorHasConnectorEnds>
+                    <connectorEnd Id="f51d5b8e-5d7b-4e9e-aba8-b90f8d4d9222">
+                      <elementDefinition Id="b865c7ed-c3f4-45bf-9153-61ca4f2d6e2a" />
+                      <portWithPart>
+                        <providedInterfaceMoniker Id="ec40df2e-9aaa-4c1a-876f-20daee5c6f5f" LastKnownName="Port1" />
+                      </portWithPart>
+                    </connectorEnd>
+                  </connectorHasConnectorEnds>
+                </relationshipOwnedElementsInternal>
+                <elementDefinition Id="09cb80ec-512d-481e-ada1-dc88343fd4eb" />
+              </connector>
+            </targetNamedElementsInternal>
+            <type_NamedElement>
+              <interfaceMoniker Id="049d1c6b-e06a-450e-87bc-ff4dbe307e60" />
+            </type_NamedElement>
+          </providedInterface>
+        </ownedAttributesInternal>
+      </component>
+    </componentModelHasComponents>
+    <componentModelHasComponents>
+      <component Id="4ea64b2f-3d46-4fc0-aebd-4424c562d1e5" name="Inventory Application" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="42c3585a-4d58-497f-8d44-4ec14d743758" />
+        <ownedAttributesInternal>
+          <part Id="3dca0434-54a1-4f27-babf-1918929bc62f" name="Enterprise.Inventory" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Composite" isComposite="true">
+            <elementDefinition Id="7868bbca-f084-459d-90b7-2a0a3a4a2c3d" />
+            <targetNamedElementsInternal>
+              <connector Id="b0c4da0a-2fb4-422e-a221-08ff602336a4" isLeaf="false" isStatic="false">
+                <requiredInterfaceMoniker Id="fa354fea-20b1-4fa7-b38e-0166210cf408" LastKnownName="Port1" />
+                <relationshipOwnedElementsInternal>
+                  <connectorHasConnectorEnds>
+                    <connectorEnd Id="2ce9fc83-7e4e-4808-96f6-8a3ff644f9e9">
+                      <elementDefinition Id="a34fc4f2-58b1-41b7-931c-a804ec625176" />
+                      <portWithPart>
+                        <requiredInterfaceMoniker Id="4f409499-957a-4c88-ac02-e595745adbd7" LastKnownName="Port1" />
+                      </portWithPart>
+                    </connectorEnd>
+                  </connectorHasConnectorEnds>
+                  <connectorHasConnectorEnds>
+                    <connectorEnd Id="3c95b0da-5190-49fe-9635-3a4b4a7a5143">
+                      <elementDefinition Id="55b02f2e-b1b2-464a-868e-6a5ae7a65949" />
+                    </connectorEnd>
+                  </connectorHasConnectorEnds>
+                </relationshipOwnedElementsInternal>
+                <elementDefinition Id="023954c3-03ad-4413-bf47-1f4b0b6ad728" />
+              </connector>
+            </targetNamedElementsInternal>
+            <type_NamedElement>
+              <componentMoniker Id="bdc48d8c-0012-4cd3-8a08-e51e75ad93f5" />
+            </type_NamedElement>
+          </part>
+          <requiredInterface Id="fa354fea-20b1-4fa7-b38e-0166210cf408" name="Port1" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isService="false" isBehavior="false">
+            <elementDefinition Id="b79df74e-3491-4f76-95a2-f6d2e36f65b6" />
+            <type_NamedElement>
+              <interfaceMoniker Id="b5805e35-d64f-483f-ac57-3c70040fbe82" LastKnownName="HTTP" />
+            </type_NamedElement>
+          </requiredInterface>
+        </ownedAttributesInternal>
+      </component>
+    </componentModelHasComponents>
+    <componentModelHasComponents>
+      <component Id="bdc48d8c-0012-4cd3-8a08-e51e75ad93f5" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="254eb7fe-f01e-4b04-933f-be986c1a6dc5" />
+        <ownedAttributesInternal>
+          <requiredInterface Id="4f409499-957a-4c88-ac02-e595745adbd7" name="Port1" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isService="false" isBehavior="false">
+            <elementDefinition Id="139a56ae-01e7-4e17-b9c8-747ffadc1a5e" />
+            <type_NamedElement>
+              <interfaceMoniker Id="51a2c378-14a7-4113-843d-ea50ad277124" />
+            </type_NamedElement>
+          </requiredInterface>
+        </ownedAttributesInternal>
+      </component>
+    </componentModelHasComponents>
+    <componentModelHasComponents>
+      <component Id="993cba17-d616-4c75-b452-e1ff9b726592" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="a48b6fdf-bf6a-4a53-be09-9995bce37a47" />
+        <ownedAttributesInternal>
+          <providedInterface Id="ec40df2e-9aaa-4c1a-876f-20daee5c6f5f" name="Port1" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isService="false" isBehavior="false">
+            <elementDefinition Id="a4710984-8681-43f4-80be-0c65bb3d5c11" />
+            <type_NamedElement>
+              <interfaceMoniker Id="698f28a3-5f4b-416b-b963-248999daa80d" />
+            </type_NamedElement>
+          </providedInterface>
+          <requiredInterface Id="367dc617-9be9-4266-b8d7-5a5f28811f3c" name="Port2" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isService="false" isBehavior="false">
+            <elementDefinition Id="37305dc0-7f43-458c-b87f-d2f24b83dca2" />
+            <type_NamedElement>
+              <interfaceMoniker Id="dd55936a-b32f-4667-972a-82502ce14852" LastKnownName="Submit Purchase Order" />
+            </type_NamedElement>
+          </requiredInterface>
+        </ownedAttributesInternal>
+      </component>
+    </componentModelHasComponents>
+    <componentModelHasComponents>
+      <component Id="ff1f5211-ff2e-41c2-abd2-2ff25e953229" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="26f65fa2-6e39-482a-8d74-7336190f48c3" />
+        <ownedAttributesInternal>
+          <providedInterface Id="09c39e17-d167-490e-9785-7acef51abcab" name="Port1" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isService="false" isBehavior="false">
+            <elementDefinition Id="235bafa5-233a-4c4c-89b8-28bbd08d4fb6" />
+            <type_NamedElement>
+              <interfaceMoniker Id="da4a86f9-ed14-4487-9062-97757075f2b8" />
+            </type_NamedElement>
+          </providedInterface>
+        </ownedAttributesInternal>
+      </component>
+    </componentModelHasComponents>
+    <modelContainsNamedElements>
+      <Interface Id="698f28a3-5f4b-416b-b963-248999daa80d" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="7d2beeeb-232c-4e00-86e8-176ff86e0abf" />
+      </Interface>
+    </modelContainsNamedElements>
+    <modelContainsNamedElements>
+      <Interface Id="51a2c378-14a7-4113-843d-ea50ad277124" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="a187b4cd-0501-47fb-b8bd-61e1e21cce85" />
+      </Interface>
+    </modelContainsNamedElements>
+    <modelContainsNamedElements>
+      <Interface Id="049d1c6b-e06a-450e-87bc-ff4dbe307e60" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="5295e2c1-78a9-478c-b8b6-d2867a8d2633" />
+      </Interface>
+    </modelContainsNamedElements>
+    <modelContainsNamedElements>
+      <Interface Id="b5805e35-d64f-483f-ac57-3c70040fbe82" name="HTTP" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="69669eaf-4fed-4940-aac5-d7bad8146de2" />
+      </Interface>
+    </modelContainsNamedElements>
+    <modelContainsNamedElements>
+      <Interface Id="dd55936a-b32f-4667-972a-82502ce14852" name="Submit Purchase Order" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="8ddbf15f-8f7c-4109-97ff-456a49b860f1" />
+      </Interface>
+    </modelContainsNamedElements>
+    <modelContainsNamedElements>
+      <Interface Id="da4a86f9-ed14-4487-9062-97757075f2b8" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="bab0771d-9b7f-49dc-968b-c5473503fc48" />
+      </Interface>
+    </modelContainsNamedElements>
+  </packagedElements>
+  <package Id="4092ce23-7f82-4f06-a70c-5193fbb40452" name="Enterprise.Modeling">
+    <elementDefinition Id="83683429-7323-4aeb-90b0-04692571d074" />
+    <profileInstances>
+      <packageHasProfileInstances Id="2b582a87-4ecf-4598-80f4-d59495dfd05f">
+        <profileInstance Id="7c458339-c366-4dd9-ad45-92ff430b8fb7" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="5b96605b-282b-434a-888a-d238e5112e0e">
+        <profileInstance Id="87aeb05c-6834-44a2-b65d-5da3592671f0" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+    </profileInstances>
+  </package>
+</componentModel>
