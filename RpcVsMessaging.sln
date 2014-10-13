@@ -23,33 +23,6 @@ EndProject
 Project("{F088123C-0E9E-452A-89E6-6BA2F21D5CAC}") = "Enterprise.Modeling", "Enterprise.Modeling\Enterprise.Modeling.modelproj", "{C0BC3D0C-79AD-4384-A345-F2726958CA08}"
 EndProject
 Global
-	GlobalSection(TeamFoundationVersionControl) = preSolution
-		SccNumberOfProjects = 8
-		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
-		SccTeamFoundationServer = https://kevinaenmey.visualstudio.com/defaultcollection
-		SccLocalPath0 = .
-		SccProjectUniqueName1 = Enterprise.Purchasing.WebApi\\Enterprise.Purchasing.WebApi.csproj
-		SccProjectName1 = Enterprise.Purchasing.WebApi
-		SccLocalPath1 = Enterprise.Purchasing.WebApi
-		SccProjectUniqueName2 = Enterprise.Purchasing.Persistence\\Enterprise.Purchasing.Persistence.csproj
-		SccProjectName2 = Enterprise.Purchasing.Persistence
-		SccLocalPath2 = Enterprise.Purchasing.Persistence
-		SccProjectUniqueName3 = Enterprise.Inventory\\Enterprise.Inventory.csproj
-		SccProjectName3 = Enterprise.Inventory
-		SccLocalPath3 = Enterprise.Inventory
-		SccProjectUniqueName4 = Enterprise.Purchasing.QueueHandler\\Enterprise.Purchasing.QueueHandler.csproj
-		SccProjectName4 = Enterprise.Purchasing.QueueHandler
-		SccLocalPath4 = Enterprise.Purchasing.QueueHandler
-		SccProjectUniqueName5 = Enterprise.Inventory.Test\\Enterprise.Inventory.Test.csproj
-		SccProjectName5 = Enterprise.Inventory.Test
-		SccLocalPath5 = Enterprise.Inventory.Test
-		SccProjectUniqueName6 = Enterprise.Inventory.LoadTest\\Enterprise.Inventory.LoadTest.csproj
-		SccProjectName6 = Enterprise.Inventory.LoadTest
-		SccLocalPath6 = Enterprise.Inventory.LoadTest
-		SccProjectUniqueName7 = Enterprise.Modeling\\Enterprise.Modeling.modelproj
-		SccProjectName7 = Enterprise.Modeling
-		SccLocalPath7 = Enterprise.Modeling
-	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
